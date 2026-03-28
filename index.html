@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowFix AI Plumbing</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar glass">
+  <h2>FlowFix AI</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero glass">
+  <h1>Never Miss a Plumbing Call Again</h1>
+  <p>AI-powered assistant that captures leads instantly 24/7.</p>
+  <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Get Started
+  </button>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section glass">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Leak Repair</div>
+    <div class="card">Drain Cleaning</div>
+    <div class="card">Bathroom Installation</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section glass">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div>1️⃣ Customer types issue</div>
+    <div>2️⃣ AI collects phone number</div>
+    <div>3️⃣ You receive instant email lead</div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section glass">
+  <h2>What Clients Say</h2>
+  <p>“We stopped missing emergency calls and increased bookings by 40%.”</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section glass">
+  <h2>Ready to Grow?</h2>
+  <button class="btn">Activate AI Receptionist</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="glass footer">
+  <p>© 2026 FlowFix AI. All rights reserved.</p>
+</footer>
+
+<!-- CHATBOT -->
+<div class="chatbot glass">
+  <div class="chat-header">AI Assistant</div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="message bot">
+      Hi 👋 What plumbing issue are you facing?
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your issue here...">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<!-- EMAILJS CDN (IMPORTANT) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- YOUR SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
